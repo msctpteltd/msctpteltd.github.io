@@ -88,7 +88,7 @@ a:hover { color: var(--green-800); }
 }
 .header-inner { display: flex; align-items: center; gap: 24px; height: 72px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; }
-.brand-mark { flex: none; border-radius: 11px; }
+.brand-mark { flex: none; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
 .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--ink); letter-spacing: -.01em; }
 .brand-name span { color: var(--gold); font-weight: 600; }
 .nav { display: flex; gap: 28px; margin-left: auto; }

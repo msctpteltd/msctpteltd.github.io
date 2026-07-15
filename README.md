@@ -1,6 +1,6 @@
 # msctpteltd.com
 
-Official website for **MSC Pte. Ltd.** — a Singapore-based import and distribution
+Official website for **MSCT Pte. Ltd.** — a Singapore-based import and distribution
 company supplying quality foods, groceries and consumer goods.
 
 Static site hosted on **GitHub Pages** and served at **https://msctpteltd.com**.
