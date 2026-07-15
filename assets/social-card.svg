@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14532d"/>
+      <stop offset="1" stop-color="#0f3d21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="260" fill="#e0a94a" opacity="0.10"/>
+  <circle cx="150" cy="560" r="220" fill="#2f8f5b" opacity="0.14"/>
+  <g transform="translate(96,150)">
+    <rect width="88" height="88" rx="22" fill="#e0a94a"/>
+    <path d="M44 20c11 6 16.5 13.6 16.5 24.2C60.5 55.6 53.4 63.8 44 68c-9.4-4.2-16.5-12.4-16.5-23.8C27.5 33.6 33 26 44 20Z" fill="#14532d"/>
+  </g>
+  <text x="212" y="212" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#ffffff">MSC Pte. Ltd.</text>
+  <text x="96" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="600" fill="#ffffff">Food &amp; goods import,</text>
+  <text x="96" y="446" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="600" fill="#e0a94a">delivered with trust.</text>
+  <text x="96" y="536" font-family="Arial, sans-serif" font-size="30" fill="#a9c2b1">Singapore-based import &amp; distribution · msctpteltd.com</text>
+</svg>
