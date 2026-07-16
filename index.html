@@ -8,14 +8,23 @@
   <meta name="theme-color" content="#14532d" />
   <link rel="canonical" href="https://msctpteltd.com/" />
 
-  <!-- Open Graph / social -->
+  <!-- Open Graph / social (link preview) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="MSCT Pte. Ltd." />
   <meta property="og:title" content="MSCT Pte. Ltd. — Food &amp; Goods Import and Distribution" />
   <meta property="og:description" content="A Singapore-based import and distribution company supplying quality foods, groceries and consumer goods across the region." />
   <meta property="og:url" content="https://msctpteltd.com/" />
-  <meta property="og:image" content="https://msctpteltd.com/assets/og-card.png" />
+  <meta property="og:image" content="https://msctpteltd.com/assets/og-card.jpg" />
+  <meta property="og:image:secure_url" content="https://msctpteltd.com/assets/og-card.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="MSCT Pte. Ltd. — food & goods import, Singapore" />
+  <meta property="og:locale" content="en_SG" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MSCT Pte. Ltd. — Food &amp; Goods Import and Distribution" />
+  <meta name="twitter:description" content="A Singapore-based import and distribution company supplying quality foods, groceries and consumer goods." />
+  <meta name="twitter:image" content="https://msctpteltd.com/assets/og-card.jpg" />
 
   <link rel="icon" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -31,6 +40,7 @@
     "@type": "Organization",
     "name": "MSCT Pte. Ltd.",
     "url": "https://msctpteltd.com",
+    "logo": "https://msctpteltd.com/assets/logo-mark.png",
     "description": "Singapore-based import and distribution company supplying quality foods, groceries and consumer goods.",
     "address": {
       "@type": "PostalAddress",
@@ -58,47 +68,91 @@
         <a href="#about">About</a>
         <a href="#services">What we do</a>
         <a href="#why">Why us</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <a class="btn btn-primary header-cta" href="#contact">Get in touch</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#services">What we do</a>
+      <a href="#why">Why us</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero">
+      <div class="hero-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
       <div class="container hero-inner">
-        <p class="eyebrow">Singapore · Import &amp; Distribution</p>
-        <h1>Quality foods &amp; everyday goods, sourced and delivered with trust.</h1>
-        <p class="lede">
+        <p class="eyebrow hero-up" style="--d:.05s">Singapore · Import &amp; Distribution</p>
+        <h1 class="hero-up" style="--d:.15s">Quality foods &amp; everyday goods, <span class="grad">sourced and delivered with trust.</span></h1>
+        <p class="lede hero-up" style="--d:.3s">
           MSCT Pte. Ltd. is a Singapore-based import and distribution company. We supply
           trusted foods, groceries and consumer goods to retailers, businesses and
           communities across the region.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions hero-up" style="--d:.45s">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
           <a class="btn btn-ghost" href="#services">What we do &rarr;</a>
         </div>
       </div>
+      <div class="scroll-cue hero-up" style="--d:.7s" aria-hidden="true"><span></span></div>
     </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Rice &amp; grains</span><span aria-hidden="true">•</span>
+        <span>Packaged foods</span><span aria-hidden="true">•</span>
+        <span>Snacks &amp; confectionery</span><span aria-hidden="true">•</span>
+        <span>Beverages</span><span aria-hidden="true">•</span>
+        <span>Cooking essentials</span><span aria-hidden="true">•</span>
+        <span>Household goods</span><span aria-hidden="true">•</span>
+        <span>Provisions</span><span aria-hidden="true">•</span>
+        <span>Rice &amp; grains</span><span aria-hidden="true">•</span>
+        <span>Packaged foods</span><span aria-hidden="true">•</span>
+        <span>Snacks &amp; confectionery</span><span aria-hidden="true">•</span>
+        <span>Beverages</span><span aria-hidden="true">•</span>
+        <span>Cooking essentials</span><span aria-hidden="true">•</span>
+        <span>Household goods</span><span aria-hidden="true">•</span>
+        <span>Provisions</span><span aria-hidden="true">•</span>
+      </div>
+    </div>
 
     <!-- TRUST STRIP -->
     <section class="trust" aria-label="At a glance">
       <div class="container trust-grid">
-        <div class="trust-item">
+        <div class="trust-item reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.4 9 10 5.2-1.6 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4" class="check"/></svg>
           <span>Singapore-registered company</span>
         </div>
-        <div class="trust-item">
+        <div class="trust-item reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>
           <span>Food &amp; grocery import</span>
         </div>
-        <div class="trust-item">
+        <div class="trust-item reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
           <span>Regional distribution reach</span>
         </div>
-        <div class="trust-item">
+        <div class="trust-item reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 4 3.3 7.4 8 8 4.7-.6 8-4 8-8V7l-8-4Z"/></svg>
           <span>Compliance &amp; food-safety first</span>
         </div>
@@ -109,26 +163,26 @@
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="about-copy">
-          <p class="kicker">Who we are</p>
-          <h2>A dependable import partner rooted in Singapore.</h2>
-          <p>
+          <p class="kicker reveal">Who we are</p>
+          <h2 class="reveal">A dependable import partner rooted in Singapore.</h2>
+          <p class="reveal">
             MSCT Pte. Ltd. specialises in the import and distribution of foods,
             groceries and everyday consumer goods. From our base in Singapore, we
             connect quality producers with retailers and communities — handling
             sourcing, compliant cross-border logistics, storage and last-mile
             distribution.
           </p>
-          <p>
+          <p class="reveal">
             We build long-term relationships with suppliers and partners, and we
             hold ourselves to a simple standard: the right goods, handled properly,
             delivered on time.
           </p>
         </div>
         <ul class="about-points">
-          <li><strong>Trusted sourcing</strong><span>Carefully selected producers and suppliers.</span></li>
-          <li><strong>Compliant logistics</strong><span>Cross-border import handled to standard.</span></li>
-          <li><strong>Proper handling</strong><span>Correct storage for food-grade goods.</span></li>
-          <li><strong>Reliable delivery</strong><span>Timely supply to retail &amp; business partners.</span></li>
+          <li class="reveal"><strong>Trusted sourcing</strong><span>Carefully selected producers and suppliers.</span></li>
+          <li class="reveal"><strong>Compliant logistics</strong><span>Cross-border import handled to standard.</span></li>
+          <li class="reveal"><strong>Proper handling</strong><span>Correct storage for food-grade goods.</span></li>
+          <li class="reveal"><strong>Reliable delivery</strong><span>Timely supply to retail &amp; business partners.</span></li>
         </ul>
       </div>
     </section>
@@ -137,37 +191,37 @@
     <section class="section section-alt" id="services">
       <div class="container">
         <div class="section-head">
-          <p class="kicker">What we import &amp; distribute</p>
-          <h2>Foods, groceries and everyday essentials.</h2>
-          <p class="section-sub">A broad, dependable range for retail and wholesale partners.</p>
+          <p class="kicker reveal">What we import &amp; distribute</p>
+          <h2 class="reveal">Foods, groceries and everyday essentials.</h2>
+          <p class="section-sub reveal">A broad, dependable range for retail and wholesale partners.</p>
         </div>
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🌾</div>
             <h3>Rice, grains &amp; staples</h3>
             <p>Pantry foundations sourced for quality and consistency.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🥫</div>
             <h3>Packaged &amp; canned foods</h3>
             <p>Shelf-stable products for everyday retail supply.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🍪</div>
             <h3>Snacks &amp; confectionery</h3>
             <p>Popular treats and impulse lines that move.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🧃</div>
             <h3>Beverages</h3>
             <p>Drinks and mixes for stores, offices and food service.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🧂</div>
             <h3>Cooking essentials</h3>
             <p>Oils, sauces, spices and the basics every kitchen needs.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-ico" aria-hidden="true">🧺</div>
             <h3>Household &amp; consumer goods</h3>
             <p>Everyday non-food essentials to round out the shelf.</p>
@@ -180,32 +234,32 @@
     <section class="section" id="why">
       <div class="container">
         <div class="section-head">
-          <p class="kicker">Why choose us</p>
-          <h2>Built for reliability, end to end.</h2>
+          <p class="kicker reveal">Why choose us</p>
+          <h2 class="reveal">Built for reliability, end to end.</h2>
         </div>
         <div class="values">
-          <div class="value">
+          <div class="value reveal">
             <div class="value-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3 4 6.5v5.5c0 4.4 3.4 7.9 8 9 4.6-1.1 8-4.6 8-9V6.5L12 3Z"/><path d="m8.5 12 2.4 2.4L16 9.5" class="check"/></svg>
             </div>
             <h3>Food safety &amp; compliance</h3>
             <p>Handling and documentation aligned to import standards.</p>
           </div>
-          <div class="value">
+          <div class="value reveal">
             <div class="value-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M3 7h12v9H3zM15 10h4l2 3v3h-6z"/><circle cx="7" cy="18.5" r="1.7"/><circle cx="17.5" cy="18.5" r="1.7"/></svg>
             </div>
             <h3>Reliable supply chain</h3>
             <p>Dependable sourcing and logistics you can plan around.</p>
           </div>
-          <div class="value">
+          <div class="value reveal">
             <div class="value-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 2c3 4 3 16 0 20M12 2C9 6 9 18 12 22M2.5 12h19"/><circle cx="12" cy="12" r="9.2"/></svg>
             </div>
             <h3>Regional reach</h3>
             <p>A Singapore hub serving partners across the region.</p>
           </div>
-          <div class="value">
+          <div class="value reveal">
             <div class="value-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9.5" r="2.6"/><path d="M3.5 19c.6-3 3-4.6 5.5-4.6S13.9 16 14.5 19M15 15c2.2.1 4 1.5 4.6 4"/></svg>
             </div>
@@ -220,14 +274,14 @@
     <section class="section section-alt" id="process">
       <div class="container">
         <div class="section-head">
-          <p class="kicker">How we work</p>
-          <h2>From source to shelf.</h2>
+          <p class="kicker reveal">How we work</p>
+          <h2 class="reveal">From source to shelf.</h2>
         </div>
         <ol class="steps">
-          <li><span class="step-n">1</span><h3>Source</h3><p>Select trusted producers and suppliers.</p></li>
-          <li><span class="step-n">2</span><h3>Import</h3><p>Manage compliant cross-border logistics.</p></li>
-          <li><span class="step-n">3</span><h3>Store</h3><p>Handle and warehouse to the right standard.</p></li>
-          <li><span class="step-n">4</span><h3>Distribute</h3><p>Deliver on time to retail &amp; business partners.</p></li>
+          <li class="reveal"><span class="step-n">1</span><h3>Source</h3><p>Select trusted producers and suppliers.</p></li>
+          <li class="reveal"><span class="step-n">2</span><h3>Import</h3><p>Manage compliant cross-border logistics.</p></li>
+          <li class="reveal"><span class="step-n">3</span><h3>Store</h3><p>Handle and warehouse to the right standard.</p></li>
+          <li class="reveal"><span class="step-n">4</span><h3>Distribute</h3><p>Deliver on time to retail &amp; business partners.</p></li>
         </ol>
       </div>
     </section>
@@ -236,12 +290,12 @@
     <section class="section contact" id="contact">
       <div class="container contact-grid">
         <div class="contact-copy">
-          <p class="kicker">Get in touch</p>
-          <h2>Let&rsquo;s talk supply.</h2>
-          <p>Retailer, distributor or supplier — we&rsquo;d be glad to explore working together.</p>
-          <a class="btn btn-primary" href="mailto:info@msctpteltd.com">Email us</a>
+          <p class="kicker reveal">Get in touch</p>
+          <h2 class="reveal">Let&rsquo;s talk supply.</h2>
+          <p class="reveal">Retailer, distributor or supplier — we&rsquo;d be glad to explore working together.</p>
+          <a class="btn btn-primary reveal" href="mailto:info@msctpteltd.com">Email us</a>
         </div>
-        <div class="contact-details">
+        <div class="contact-details reveal">
           <div class="contact-row">
             <span class="contact-label">Address</span>
             <address>111 North Bridge Road, #05-17<br />Peninsula Plaza, Singapore 179098</address>
@@ -283,18 +337,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Smooth-scroll for same-page anchors
-    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        var id = a.getAttribute('href');
-        if (id.length > 1) {
-          var el = document.querySelector(id);
-          if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-        }
-      });
-    });
-  </script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>
